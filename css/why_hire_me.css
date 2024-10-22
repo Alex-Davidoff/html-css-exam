@@ -1,0 +1,82 @@
+.sect-why_hire_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-why_hire_me>h2{
+    color: #222;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hire-panel{
+    display: flex;
+    justify-content: center;
+    gap: 3.75rem;
+}
+
+.hire-card{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hire-card>img{
+    box-sizing: initial;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1.5rem;
+    background-color: rgba(34, 34, 34, 0.10);
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+
+.hire-card>h3{
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.hire-card>p{
+    color: rgba(34, 34, 34, 0.50);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px){
+    .sect-why_hire_me>h2{
+        margin-bottom: 4rem;
+    }
+    
+    .hire-panel{
+        flex-direction: column;
+        margin-bottom: 6.25rem;
+    }
+
+    .hire-card:nth-child(4){
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+    .sect-why_hire_me>h2{
+        margin-bottom: 6.25rem;
+    }
+
+    .hire-panel{
+        flex-direction: row;
+        margin-bottom: 7.8rem;
+    }
+
+    .hire-card:nth-child(4){
+        display: block;
+    }
+
+}

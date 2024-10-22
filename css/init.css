@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    width: 100vw;
+    background-color: #FAF4F2;
+}
+
+.pageblock{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px){
+    .pageblock{
+        width: 23.5rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+    .pageblock{
+        width: 90rem;
+    }
+}

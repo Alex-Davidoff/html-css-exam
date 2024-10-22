@@ -1,0 +1,150 @@
+.sect-i_am{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}   
+
+.sect-i_am-left>h1{
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.sect-i_am-left>p{
+    color: #222;
+    font-size: 1.125rem;
+}
+
+.social_media_buttons{
+    display: flex;
+    margin-bottom: 1.6rem;
+    gap: 0.5rem;
+}
+
+.social_media_buttons>a{
+    border: 1px solid;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_buttons>a:nth-child(1){
+    color: blue;
+}
+.social_media_buttons>a:nth-child(2){
+    color: magenta;
+}
+.social_media_buttons>a:nth-child(3){
+    color: lightskyblue;
+}
+.social_media_buttons>a:nth-child(4){
+    color: orange;
+}
+
+.i_am_buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.i_am_buttons>button{
+    height: 3.5rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    border-radius: 0.625rem;
+    border: none;    
+}
+
+.i_am_buttons>button:nth-child(1){
+    color: #F9F9F9;
+    background-color: #FF2950;
+}
+.i_am_buttons>button:nth-child(2){
+    color: rgba(34, 34, 34, 0.50);
+    border: 0.125rem solid #FF9B70;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px){
+    .sect-i_am{
+        padding-top: 1.25rem;
+        margin-bottom: 6.8rem;
+    }
+    
+    .sect-i_am-left{
+        width: 21rem;
+    }
+    
+    .sect-i_am-left>h1{
+        font-size: 1.25rem;
+        line-height: 120%;  
+    }
+    
+    .sect-i_am-left>p{
+        margin-bottom: 1.5rem;
+    }
+
+    .social_media_buttons{
+        justify-content: center;
+    }
+
+    .i_am_buttons>button{
+        font-size: 1rem;
+    }
+    
+    .sect-i_am-right{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+    .sect-i_am{
+        padding-top: 7rem;
+        margin-bottom: 7.8rem;
+    }
+    
+    .sect-i_am-left{
+        width: 32rem;
+    }
+    
+    .sect-i_am-left>h1{
+        font-size: 2.5rem;
+        line-height: 3.875rem;
+    }
+    
+    .sect-i_am-left>p{
+        margin-bottom: 3.375rem;
+    }
+
+    .social_media_buttons{
+        justify-content: flex-start;
+    }
+    
+    .i_am_buttons>button{
+        font-size: 1.125rem;
+    }
+    
+    .sect-i_am-right{
+        display: block;
+        width: 25rem;
+        height: 25rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+    }
+    
+    .sect-i_am-right>img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    
+}

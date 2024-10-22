@@ -1,0 +1,22 @@
+@media screen and (min-width: 0) and (max-width: 480px){
+header{
+    background-color: #FF7315;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    color: #F9F9F9;
+}
+
+header>p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-left: 1.25rem;
+}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+    header{
+        display: none;
+    }
+}
