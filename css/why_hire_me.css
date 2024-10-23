@@ -7,7 +7,6 @@
 
 .sect-why_hire_me>h2{
     color: #222;
-    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -51,6 +50,7 @@
 
 @media screen and (min-width: 0) and (max-width: 480px){
     .sect-why_hire_me>h2{
+        font-size: 2rem;
         margin-bottom: 4rem;
     }
     
@@ -67,6 +67,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 9999px){
     .sect-why_hire_me>h2{
+        font-size: 3rem;
         margin-bottom: 6.25rem;
     }
 
