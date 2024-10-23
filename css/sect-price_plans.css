@@ -1,0 +1,130 @@
+.sect-price_plans>h2{
+    color: #222;
+    font-weight: 600;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.price_plans-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-card{
+    width: 20.94rem;
+    height: 31.25rem;
+    background-color: #F9F9F9;
+    border-radius: 1rem;
+    box-shadow: 0px 20px 40px 0px rgba(255, 115, 21, 0.10);
+}
+
+.price-card>h3{
+    padding: 1.125rem 0;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #FF9B70;
+    color: #F9F9F9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 123.6%; 
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+.price-card>h4{
+    color: #2B2B2B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 123.6%; 
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.price-card>h4::before{
+    content: "$";
+}
+
+.price-card>h4::after{
+    content: "/hour";
+    color: #2B2B2B;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 0.94rem;
+    font-weight: 400;
+    line-height: 160%; 
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-left: 0.75rem;
+}
+
+div>ul>li{
+    color: #222;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 171.429%;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+    margin-left: 3rem;
+}
+
+div>ul>li::before{
+    content: "\2716";
+    margin-right: 1rem;
+    font-size: 1.1em;
+}
+
+.check-true{
+    opacity: 1;
+}
+
+.check-true::before{
+    content: "\2714";
+    color: #FF9B70;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px){
+.sect-price_plans{
+    padding: 6.19rem 0 8rem 0;
+}
+
+.sect-price_plans>h2{
+    font-size: 2rem;
+}
+
+.price_plans-panel{
+    flex-direction: column-reverse;
+    gap: 4rem;
+}
+
+.price-card:first-child{
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+.sect-price_plans{
+    padding: 7.8rem 0 6.25rem 0;
+}
+
+.sect-price_plans>h2{
+    font-size: 3rem;
+}
+
+.price_plans-panel{
+    flex-direction: row;
+    gap: 4.2rem;
+}
+
+.price-card:first-child{
+    display: block;
+}
+
+}
