@@ -1,4 +1,4 @@
-.sect-compl_proj{
+.compl_proj-panel{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     gap: 2rem;
 }
 
-.sect-compl_proj>img{
+.compl_proj-panel>img{
     height: auto;
     object-fit: cover;
 }
@@ -24,14 +24,14 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 480px){
-.sect-compl_proj{
+.compl_proj-panel{
     flex-direction: column-reverse;
     width: 100%;
     padding: 5rem 0;
     margin: 0 auto 4.7rem auto;
 }
 
-.sect-compl_proj>img{
+.compl_proj-panel>img{
     width: 18.75rem;
     max-height: 14.25rem;
 }
@@ -59,14 +59,14 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 9999px){
-.sect-compl_proj{
+.compl_proj-panel{
     flex-direction: row;
     width: 71.25rem;
     padding: 3.875rem 0;
     margin: 0 auto 7.8rem auto;
 }
 
-.sect-compl_proj>img{
+.compl_proj-panel>img{
     width: 26.9rem;
     max-height: 20.5rem;
 }

@@ -19,6 +19,11 @@ body{
     margin: 0 auto;
 }
 
+/* section{
+    border: 1px solid blue;
+    border-radius: 2rem;
+} */
+
 @media screen and (min-width: 0) and (max-width: 480px){
     .pageblock{
         width: 23.5rem;

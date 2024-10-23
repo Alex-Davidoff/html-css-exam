@@ -71,7 +71,6 @@
 @media screen and (min-width: 0) and (max-width: 480px){
     .sect-i_am{
         padding-top: 1.25rem;
-        margin-bottom: 6.8rem;
     }
     
     .sect-i_am-left{
@@ -91,6 +90,10 @@
         justify-content: center;
     }
 
+    .i_am_buttons{
+        margin-bottom: 6.8rem;
+    }
+
     .i_am_buttons>button{
         font-size: 1rem;
     }
@@ -104,7 +107,6 @@
 @media screen and (min-width: 481px) and (max-width: 9999px){
     .sect-i_am{
         padding-top: 7rem;
-        margin-bottom: 7.8rem;
     }
     
     .sect-i_am-left{
@@ -122,6 +124,10 @@
 
     .social_media_buttons{
         justify-content: flex-start;
+    }
+
+    .i_am_buttons{
+        margin-bottom: 7.8rem;
     }
     
     .i_am_buttons>button{
