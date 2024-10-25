@@ -1,0 +1,65 @@
+.email_me-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF7315;
+    margin: 0 auto;
+}
+
+.email_me-panel>h3{
+    color: #F9F9F9;
+    font-weight: 600;
+}
+
+.email_me-panel>button{
+    width: 16.2rem;
+    height: 4.375rem;
+    background-color: #F9F9F9;
+    box-shadow: 0px 0.927px 1.924px 0px rgba(0, 0, 0, 0.01);
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px){
+.email_me-panel{
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2.25rem 1.25rem 4.125rem 1.25rem;
+    gap: 3.625rem;
+}
+
+.email_me-panel>h3{
+    font-size: 2rem;
+    line-height: 193.75%;
+    width: 100%;
+}
+
+.email_me-panel>button{
+    border-radius: 0.9375rem;
+}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+.email_me-panel{
+    flex-direction: row;
+    border-radius: 1.5rem;
+    width: 69.375rem;
+    padding: 3.125rem 4.69rem;
+    gap: 0rem;
+}
+
+.email_me-panel>h3{
+    font-size: 2.25rem;
+    line-height: 172.222%;
+    width: 21.44rem;
+}
+
+.email_me-panel>button{
+    border-radius: 0.625rem;
+}
+
+}
