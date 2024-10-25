@@ -1,7 +1,7 @@
 .sect-i_am{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10rem;
 }   
 
