@@ -1,0 +1,89 @@
+.sect-blog{
+    padding: 7.8125rem 0;
+}
+
+.sect-blog>h2{
+    color: #222;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 9.375rem;
+    margin-bottom: 3rem;
+}
+
+.blog-panel{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "ga-blogcard-1 ga-blogcard-2 ga-blogcard-3 ga-blogcard-4"
+    "ga-sliderpanel ga-sliderpanel ga-sliderpanel ga-sliderpanel";
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.blog-card{
+    width: 16.875rem;
+    height: 22.75rem;
+    border-radius: 0.9375rem;
+    background-color: #F9F9F9;
+    box-shadow: 0 0.4375rem 1.25rem 0 rgba(0, 0, 0, 0.07);
+    padding: 0.5rem;
+}
+
+.blog-card:nth-child(1){
+    grid-area: ga-blogcard-1;
+}
+.blog-card:nth-child(2){
+    grid-area: ga-blogcard-2;
+}
+.blog-card:nth-child(3){
+    grid-area: ga-blogcard-3;
+}
+.blog-card:nth-child(4){
+    grid-area: ga-blogcard-4;
+}
+
+.blog-card>span{
+    display: block;
+    width: 15.625rem;
+    height: 12.1875rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.blog-card>span>img{
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog-card>h3{
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 123.6%; 
+    text-transform: capitalize;
+    margin: 0 0.5rem 0.75rem 0.5rem;
+}
+
+.blog-card>p{
+    color: rgba(34, 34, 34, 0.50);
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5rem; 
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+}
+
+.blog-panel-sliderpanel{
+    grid-area: ga-sliderpanel;
+}
+
+/* https://html-plus.in.ua/create-css-slider-only/
+Способ 7. Слайдер на основе свойства clip-path
+*/
