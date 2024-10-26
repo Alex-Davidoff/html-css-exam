@@ -1,5 +1,133 @@
+@media screen and (min-width: 0) and (max-width: 480px){
+.sect-blog{
+    padding: 7.5rem 0;
+}
+
+.sect-blog>h2{
+    color: #222;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 3.3125rem;
+    margin-bottom: 1rem;
+}
+
+.blog-panel{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.blog-card{
+    width: 16.875rem;
+    height: 22.75rem;
+    border-radius: 0.9375rem;
+    background-color: #F9F9F9;
+    box-shadow: 0 0.4375rem 1.25rem 0 rgba(0, 0, 0, 0.07);
+    padding: 0.5rem;
+
+    display: none;
+}
+
+
+
+.blog-card>span{
+    display: block;
+    width: 15.625rem;
+    height: 12.1875rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.blog-card>span>img{
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog-card>h3{
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 123.6%; 
+    text-transform: capitalize;
+    margin: 0 0.5rem 0.75rem 0.5rem;
+}
+
+.blog-card>p{
+    color: rgba(34, 34, 34, 0.50);
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5rem; 
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+}
+
+.blog-panel-sliderpanel{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sect-blog>input{
+    display: none;
+}
+
+.blog-panel-sliderpanel>label{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.25rem solid #FF7315;
+    border-radius: 1rem;
+    background-color: #FAF4F2;
+}
+
+.blog-panel-sliderpanel>label:hover{
+    background-color: #FF7315;
+}
+
+#one:checked ~ .blog-panel-sliderpanel>label[class="one"],
+#two:checked ~ .blog-panel-sliderpanel>label[class="two"],
+#three:checked ~ .blog-panel-sliderpanel>label[class="three"],
+#four:checked ~ .blog-panel-sliderpanel>label[class="four"]{
+  width: 4rem;
+  background-color: #FF7315;
+}
+
+#one:checked ~ .blog-panel>div,
+#two:checked ~ .blog-panel>div,
+#three:checked ~ .blog-panel>div,
+#four:checked ~ .blog-panel>div{
+    display: none;
+}
+#one:checked ~ .blog-panel>div:nth-child(1){
+    display: block;
+}
+#two:checked ~ .blog-panel>div:nth-child(2){
+    display: block;
+}
+#three:checked ~ .blog-panel>div:nth-child(3){
+    display: block;
+}
+#four:checked ~ .blog-panel>div:nth-child(4){
+    display: block;
+}
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
 .sect-blog{
     padding: 7.8125rem 0;
+}
+
+.sect-blog>input{
+    display: none;
 }
 
 .sect-blog>h2{
@@ -13,10 +141,6 @@
 .blog-panel{
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "ga-blogcard-1 ga-blogcard-2 ga-blogcard-3 ga-blogcard-4"
-    "ga-sliderpanel ga-sliderpanel ga-sliderpanel ga-sliderpanel";
     gap: 1.25rem;
     justify-content: center;
 }
@@ -28,19 +152,6 @@
     background-color: #F9F9F9;
     box-shadow: 0 0.4375rem 1.25rem 0 rgba(0, 0, 0, 0.07);
     padding: 0.5rem;
-}
-
-.blog-card:nth-child(1){
-    grid-area: ga-blogcard-1;
-}
-.blog-card:nth-child(2){
-    grid-area: ga-blogcard-2;
-}
-.blog-card:nth-child(3){
-    grid-area: ga-blogcard-3;
-}
-.blog-card:nth-child(4){
-    grid-area: ga-blogcard-4;
 }
 
 .blog-card>span{
@@ -81,9 +192,7 @@
 }
 
 .blog-panel-sliderpanel{
-    grid-area: ga-sliderpanel;
+    display: none;
 }
 
-/* https://html-plus.in.ua/create-css-slider-only/
-Способ 7. Слайдер на основе свойства clip-path
-*/
+}
