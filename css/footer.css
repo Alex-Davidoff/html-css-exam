@@ -1,13 +1,61 @@
+@media screen and (min-width: 0) and (max-width: 480px){
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:  #F1F1F1;
-    height: 10rem;
+    height: 11rem;
+    gap: 1rem;
 }
 
 footer>p{
     color: #222;
     font-size: 1.125rem;
     font-weight: 500;
+}
+
+footer>a, footer>span{
+    display: inherit;
+}
+
+footer>a{
+    color: rgba(34, 34, 34, 0.80);
+    font-size: 1.125rem;
+}
+
+footer>span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer>span>a{
+    font-size: 2rem;
+}
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 9999px){
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F1F1F1;
+    height: 11rem;
+    gap: 1rem;
+}
+
+footer>p{
+    color: #222;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+footer>a, footer>span{
+    display: none;
+}
 }
