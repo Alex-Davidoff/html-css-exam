@@ -25,6 +25,14 @@ body{
     border-radius: 2rem;
 } */
 
+button{
+    transition: 0.8s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
 @media screen and (min-width: 0) and (max-width: 480px){
     .pageblock{
         width: 23.5rem;
