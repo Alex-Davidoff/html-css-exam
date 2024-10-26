@@ -1,19 +1,14 @@
-@media screen and (min-width: 0) and (max-width: 480px){
-.sect-blog{
-    padding: 7.5rem 0;
+.sect-blog>input{
+    display: none;
 }
 
 .sect-blog>h2{
     color: #222;
-    font-size: 2rem;
     font-weight: 600;
-    margin-left: 3.3125rem;
-    margin-bottom: 1rem;
 }
 
 .blog-panel{
     display: grid;
-    grid-template-rows: repeat(2, auto);
     gap: 1.25rem;
     justify-content: center;
 }
@@ -25,11 +20,7 @@
     background-color: #F9F9F9;
     box-shadow: 0 0.4375rem 1.25rem 0 rgba(0, 0, 0, 0.07);
     padding: 0.5rem;
-
-    display: none;
 }
-
-
 
 .blog-card>span{
     display: block;
@@ -68,20 +59,35 @@
     margin: 0 0.5rem;
 }
 
+@media screen and (min-width: 0) and (max-width: 480px){
+.sect-blog{
+    padding: 7.5rem 0;
+}
+
+.sect-blog>h2{
+    font-size: 2rem;
+    margin-left: 3.3125rem;
+    margin-bottom: 1rem;
+}
+
+.blog-panel{
+    grid-template-rows: repeat(2, auto);
+}
+
+.blog-card{
+    display: none;
+}
+
 .blog-panel-sliderpanel{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.sect-blog>input{
-    display: none;
-}
-
 .blog-panel-sliderpanel>label{
     display: block;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border: 0.25rem solid #FF7315;
     border-radius: 1rem;
     background-color: #FAF4F2;
@@ -126,69 +132,18 @@
     padding: 7.8125rem 0;
 }
 
-.sect-blog>input{
-    display: none;
-}
-
 .sect-blog>h2{
-    color: #222;
     font-size: 3rem;
-    font-weight: 600;
     margin-left: 9.375rem;
     margin-bottom: 3rem;
 }
 
 .blog-panel{
-    display: grid;
     grid-template-columns: repeat(4, auto);
-    gap: 1.25rem;
-    justify-content: center;
 }
 
 .blog-card{
-    width: 16.875rem;
-    height: 22.75rem;
-    border-radius: 0.9375rem;
-    background-color: #F9F9F9;
-    box-shadow: 0 0.4375rem 1.25rem 0 rgba(0, 0, 0, 0.07);
-    padding: 0.5rem;
-}
-
-.blog-card>span{
     display: block;
-    width: 15.625rem;
-    height: 12.1875rem;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.blog-card>span>img{
-    object-fit: cover;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.blog-card>h3{
-    color: #222;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 123.6%; 
-    text-transform: capitalize;
-    margin: 0 0.5rem 0.75rem 0.5rem;
-}
-
-.blog-card>p{
-    color: rgba(34, 34, 34, 0.50);
-    font-kerning: none;
-    font-feature-settings: 'calt' off;
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.5rem; 
-    text-transform: capitalize;
-    margin: 0 0.5rem;
 }
 
 .blog-panel-sliderpanel{
